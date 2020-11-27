@@ -26,6 +26,8 @@ struct CAR_VALUES {
 	   double indicationofbreakswitch;
 };
 
-extern struct CAR_VALUES VALUES;
+extern struct CAR_VALUES OLD_VALUES;
+
+extern double last_vals[9];
 
 #endif /* DATAPROCESS_H_ */

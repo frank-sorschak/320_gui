@@ -5,7 +5,8 @@ int RunReal ( PtWidget_t *widget , ApInfo_t *apinfo , PtCallbackInfo_t *cbinfo )
 /* abmain.c */
 
 /* dataProcess.c */
-int mainThread ( void );
+void *main_logic_thread ( void *empty );
+void *test_func ( void *empty );
 void initalizeProducers ( void );
 void initalizeTimers ( void );
 void fetchValues ( void );

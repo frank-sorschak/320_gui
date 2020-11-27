@@ -31,20 +31,13 @@ RunReal( PtWidget_t *widget, ApInfo_t *apinfo, PtCallbackInfo_t *cbinfo )
 	/* eliminate 'unreferenced' warnings */
 	widget = widget, apinfo = apinfo, cbinfo = cbinfo;
 
-	int milisToRefresh = 1000;
-
-	//start thread here, then initialize the timer
-	//the threads
-
-	pthread_create(&dataProcessThread, NULL, &main_logic_thread, NULL);
-
-
+	int milisToRefresh = 200;
 
 	//then need to have the timer trigger
-//	PtWidget_t *timer = ABW_UpdateTimer;
-//
-//	PtSetResource(timer, Pt_ARG_TIMER_INITIAL, milisToRefresh, 0);
-//	PtSetResource(timer, Pt_ARG_TIMER_REPEAT, milisToRefresh, 0);
+	PtWidget_t *timer = ABW_UpdateTimer;
+
+	PtSetResource(timer, Pt_ARG_TIMER_INITIAL, milisToRefresh, 0);
+	PtSetResource(timer, Pt_ARG_TIMER_REPEAT, milisToRefresh, 0);
 
 
 	return( Pt_CONTINUE );

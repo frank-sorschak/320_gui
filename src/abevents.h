@@ -6,7 +6,6 @@ static const ApEventLink_t AbApplLinks[] = {
 	};
 
 static const ApEventLink_t AbLinks_base[] = {
-	{ 8, 0, 0L, 0L, 0L, NULL, NULL, "TestButton", 2009, test123, 0, 0, 0, 0, },
 	{ 8, 0, 0L, 0L, 0L, NULL, NULL, "UpdateTimer", 41002, updateUI, 0, 0, 0, 0, },
 	{ 8, 0, 0L, 0L, 0L, NULL, NULL, "RunButton", 2009, RunReal, 0, 0, 0, 0, },
 	{ 0 }
